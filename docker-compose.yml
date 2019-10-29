@@ -11,25 +11,7 @@ services:
     image: nginx-angular-jumpstart
     build:
       context: .
-      dockerfile: docker/nginx.dockerfile
+      dockerfile: ./docker/nginx.dockerfile
     ports:
       - "80:80"
       - "443:443"
-    depends_on: 
-      - node
-
-
-  node:
-    container_name: node-service-jumpstart
-    image: node-service-jumpstart
-    build:
-      context: .
-      dockerfile: docker/node.dockerfile
-    environment:
-      - NODE_ENV=production
-      - CONTAINER=true
-    ports:
-      - "8080:8080"
-
-
-  
