@@ -2,7 +2,7 @@
 # Run docker-compose up
 # Live long and prosper
 
-version: '3.7'
+version: '2'
 
 services:
 
