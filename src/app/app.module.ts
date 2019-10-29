@@ -11,6 +11,7 @@ import { SigninComponent } from './users/user/signin/signin.component';
 import { FormsModule} from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
+import { AuthComponent } from './auth/auth.component';
 
 
 
@@ -21,7 +22,8 @@ import { HttpClientModule } from '@angular/common/http';
     UserComponent,
     NavComponent,
     SignupComponent,
-    SigninComponent
+    SigninComponent,
+    AuthComponent
   ],
   imports: [
     BrowserModule,
