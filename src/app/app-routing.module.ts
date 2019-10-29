@@ -19,7 +19,7 @@ const routes: Routes = [
   },
   {path:"notes",component:NotesComponent},
   {path:"user",component:UserComponent},
-  {path:"",redirectTo:"/login",pathMatch:"full"}
+  // {path:"",redirectTo:"/login",pathMatch:"full"}
 
 ];
 
