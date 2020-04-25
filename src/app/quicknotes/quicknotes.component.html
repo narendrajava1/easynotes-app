@@ -1,0 +1,24 @@
+<app-header (onAddClick)="_onAddClick()"></app-header>
+<div class="container">
+     <input 
+      [(ngModel)]="titleModel" placeholder="Title"> 
+    <br>
+   
+     <textarea  [(ngModel)]="contentModel" placeholder="Enter your content"> ></textarea>
+     
+    <br>
+   
+     <input 
+      [(ngModel)]="idModel" placeholder="What to do"> 
+   
+  </div>
+   
+  <br>
+   
+  <button  (click)="createQuicknotes()">
+    Add Note</button>
+   
+  <hr>
+   
+  <p *ngFor="let i of quicknotes" style="color: white; font-family: 'Bubblegum Sans', cursive">
+    <textarea name="note" id="note" *ngIf="i.id!=''" style="background-color:yellowgreen;">"This is the "{{i.id}} " number and Title is" {{ i.title }}"and the content is"  {{ i.content }}</textarea>
